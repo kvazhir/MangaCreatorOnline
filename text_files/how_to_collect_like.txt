@@ -1,0 +1,13 @@
+Very simple. You go to view manga, and hovering the mouse over a manga would make the collect buttons and the collect one to appear.
+
+If you have collected it you will get a message in the bottom right corner. Liking it would update its status making the button green for like or red for dislike.
+
+
+Entering on the page's manga would give you the like and the collect buttons under the manga's image.
+
+The like buttons will update themselves automatically and the vote count will too. 
+
+The add/remove button is for adding or removing a manga from colletions.
+
+
+You can then visit your collection pressing on Favs. Again, on favs you can delete from collections or visit the manga page to comment or like/dislike.

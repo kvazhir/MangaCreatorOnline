@@ -1,0 +1,3 @@
+After clicking on profile you get to your profile.
+
+On the address bar there is "profile/*you*". To simply visit another user you have to put his name after his profile: "/profile/example_user".

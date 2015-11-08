@@ -1,0 +1,39 @@
+XXX-delete manga, edit(admin not really...) inside manga... ----------------------- XXX
+XXX-inside manga buttons for like, dislike, collect, edit(author)... -------------- XXX
+XXX-CLASS FOR MANGA!!! ~almost finished --------------------------------------------XXX
+XXX-use manga class for edit manga thingy ------------------------------------------XXX
+XXX-pages for manga comments . ------------ NOT DONE!!! IMPROVEMENT IS NEEDED!!!! FOR SURE!
+XXX-pages for collections ----------------------------------------------------------XXX
+XXX-pages for user comments . ------------ NOT DONE!!! IMPROVEMENT IS NEEDED!!!! FOR SURE!
+XXX-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!post comments to last page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!+ FIX ONLY ONE PAGE COMMENTS!!!XXX
+XXX-delete comments go to last page-------------------------------------------------XXX
+XXX-comments fixed width not continuous line---------------------_------------------XXX
+XXX-button for show like buttons on manga or show only when hover ----------------- XXX
+XXX-profile comments----------------------------------------------------------------XXX
+XXX-finish profile page ------------------------------------------------------------XXX
+!!!!!!!!!!!!!!!!!!!!!!!finish help page
+!!!!!!!!!!!!!!!!!!!!!!!!isset get done....
+JS object private functions to get and do stuff.
+~!~profile memory effective ?low=1.
+XXX-TEXT SHADOW for profile text?! customizable -----------------------------------XXX
+FOCUS MANGA SO NO BUTTONS CAN BE PRESSED
+XXX-Mozila FF manga create. Offset not good.---------------------------------------XXX
+Mozilla FF SAVE thumbnail manga
+
+XX-=TOP part profile custom, or all, but that would need comments too!...
+XXX-TOP PART ONLY------------------------------------------------------------------XXX
+~!~All part profile custom, would mean comments too!! From color, to background of each... Woah. + comments per page...
+
+XXX-post delay/comment ------------------------------------------------------------XXX
+XXX-syntax error search manga , correct it -----.-.-.-.-.-..-.-.-------------------XXX
+XXX-like on/off buttons after search. ---------------------------------------------XXX
+XXX-MANGA SEARCH BAR user and ID  -------------------------------------------------XXX
+XXX-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! NOT PERFECT PAGING....!!! Change input when pressed arrow -------------------XXX
+XXX-!!! CHANGE USER TABLE in mysql, and make customize table mysql -----------------XXX
+XXX-!!! USE user class for profile  {\$user\['(\w+)'\] => $user->$1}(update: used profile class which contains a constructed user)----------------XXX
+XXX-Show total votes for manga, inside and outside.(outside? Nah) ------------------XXX
+XXX-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!FORUM QUOTE BROKEN IF NOT LAST PAGE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!111---XXX
+~last... !important Pages for manga, not only one. But later... Not sure.
+~notification
+~uid encrypted if cookies prove inefficient, though it will still be cookies. IuserDmailID etc.
+~forum class into depth(REMADE!)

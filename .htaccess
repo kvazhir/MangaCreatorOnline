@@ -1,0 +1,24 @@
+RewriteEngine ON
+
+RewriteBase /
+RewriteRule ^home/?$ ?page=home [L,NC,QSA]
+RewriteRule ^help/?$ ?page=help [L,NC,QSA]
+RewriteRule ^forum/?$ ?page=forum [L,NC,QSA]
+RewriteRule ^forum/(\w+)/?$ ?page=forum&categ=$1 [L,NC,QSA]
+RewriteRule ^forum/(\w+)/(create_topic)/?$ ?page=forum&categ=$1&create=$2 [L,NC,QSA]
+RewriteRule ^forum/(\w+)/(\w+)/(\d+)/?$ ?page=forum&categ=$1&topic=$2&npage=$3 [L,NC,QSA]
+#meh...
+RewriteRule ^settings/?$ ?page=settings [L,NC,QSA]
+RewriteRule ^forum/(\w+)/(\w+)/?$ ?page=forum&categ=$1&topic=$2 [L,NC,QSA]
+RewriteRule ^manga/?$ ?page=manga [L,NC,QSA]
+RewriteRule ^manga/create/?$ ?page=manga_create [L,NC,QSA]
+RewriteRule ^manga/draw/(\d+)/?$ ?page=manga_edit&id=$1 [L,NC,QSA]
+RewriteRule ^manga/edit/?$ ?page=manga_user_created [L,NC,QSA]
+RewriteRule ^manga/view/?$ ?page=manga_view [L,NC,QSA]
+RewriteRule ^manga/view/(\d+)/?$ ?page=manga_view&id=$1 [L,NC,QSA]
+#RewriteRule ^view_manga/?$ ?page=view_manga [L,NC,QSA]
+#RewriteRule ^login/?$ ?page=login [L,NC,QSA]
+#RewriteRule ^register/?$ ?page=register [L,NC,QSA]
+RewriteRule ^profile/(\w+)/?$ ?page=profile&user=$1 [L,NC,QSA]
+RewriteRule ^profile/?$ ?page=profile [L,NC,QSA]
+RewriteRule ^collection/?$ ?page=collection [L,NC,QSA]

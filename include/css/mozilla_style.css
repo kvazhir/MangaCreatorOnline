@@ -1,0 +1,33 @@
+.topic_preview {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+.topic_preview tr {
+  padding: 0px;
+  margin: 0px;
+}
+
+.forum th {
+ height: 80px;
+}
+
+.forum th:first-child {
+  font-size: 30px;
+}
+
+.topic_preview tr td {
+  width: 50%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.topic_preview tr td:first-child {
+  border-right: 1px solid black
+}
+
+.topic_preview tr:not(:last-child) td{
+  border-bottom: 1px solid black;
+/*   background-color: blue; */
+}

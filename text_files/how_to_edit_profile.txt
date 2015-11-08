@@ -1,0 +1,14 @@
+The editing is very simple.
+
+You just go to your profile by clicking the profile button.
+
+Inside the profile button you'll see a bar with your name in the middle. In the left side of it there are some cogs. Click on them and you'll reach the settings page.
+
+After you've reached the settings page you can have your way. All information is inputed manually. You even have a color picker(the white box). You can click the color you want on it, and then copy the HEX code, or even the RGB code.
+
+Remember, url's with dots in the image name are not accepted, for example: 
+Valid: http://test.text.te/image.jpg
+Not Valid: http://test.text.te/ima.ge.jpg
+What you can do for it to become valid is downloading it and posting it to another site like imgur. And then it should work.
+
+Play with it as much as you want and make the most wonderful profile in the history of... something.
