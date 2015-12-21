@@ -530,7 +530,16 @@ submitPost = function(){
 			// alert(window.id);
 			if(posts_page % 15 == 0){
 				var path = document.location.pathname.split('/');
-				var page = path.pop();
+				console.log(path);
+				if (isNaN(path[4])) {
+					var page = 1;
+				} else if (path[4] == '') {
+					path.pop();
+					var page = 1;
+				} else {
+					var page = path.pop();
+				}
+				console.log(page);
 				page = parseInt(page) + 1;
 				path.push(page);
 				document.location.pathname = path.join('/');
@@ -556,6 +565,7 @@ submitPost = function(){
 
 deletePost = function(id){
 	// alert('asd');
+	page = document.location.pathname.split('/')
 	$.post('/include/async/delete_post.php', {id:id}, function(data){
 		$('#'+id).fadeOut('slow');
 		// alert(data);
@@ -606,7 +616,7 @@ createTopic = function(user, lastPage){
 	// alert(lastPage);
 	var text = nl2br(document.getElementById('create_topic_text').value);
 	// .replace(/([\r\n]?)(\r\n|\n\r|\r|\n)/g, '<br />');
-	var title = document.getElementById('create_topic_title').value.replace(' ','_');
+	var title = document.getElementById('create_topic_title').value.replace(/\s/g,'_');
 	// document.getElementById('create_topic_text').value = '';
 	var path = document.location.pathname;
 	var categ = forumCateg.indexOf(path.split('/')[2]) != -1 ? path.split('/')[2] : 'trash_can';

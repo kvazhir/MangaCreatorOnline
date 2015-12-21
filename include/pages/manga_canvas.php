@@ -94,6 +94,7 @@ for(var i=0; i<2; i++){
 }*/
 
 //http://stackoverflow.com/questions/18922880/html5-canvas-resize-downscale-image-high-quality - ViliusL's post
+//After 10 months, All hail ViliusL... xD
 
 resizeDataURL = function(){
 	var newCanv = document.getElementById("cc");
