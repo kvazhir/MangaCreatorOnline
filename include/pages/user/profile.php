@@ -2,12 +2,17 @@
 //Select profile's user
 isset($_GET['user']) ? $user = $_GET['user'] : (user::$logged_in ? $user = user::$current->username : $user = '');
 $mysql = mysql::get_instance();
-if($user == ''){
+
+$sql = 'select count(*) as num from users where username = "'.$mysql->real_escape($user).'"';
+$mysql->query($sql);
+
+if($user == '' || $mysql->fetch()['num'] == 0){
 	echo '<div id="user_not_found">
 			<div>User not found...</div>
 		</div>';
 	exit();
 }
+
 if(isset($_GET['comment_page']) && $_GET['comment_page'] > 0){
 	$current_page = $_GET['comment_page'];
 } else {
