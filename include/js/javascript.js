@@ -528,7 +528,7 @@ submitPost = function(){
 			// location.reload();
 			window.id = data.replace(/^\D+/g, '');
 			// alert(window.id);
-			if(posts_page % 15 == 0){
+			if (posts_page % 15 == 0){
 				var path = document.location.pathname.split('/');
 				console.log(path);
 				if (isNaN(path[4])) {
@@ -843,7 +843,7 @@ deleteComment = function(id, toId){
 	window.onPage = document.getElementsByClassName('comment_body').length+1;
 	// alert(window.onPage+'-OP');
 	window.onPage -= 1;
-	$.post('/include/async/load_comment_after_delete.php', {id:lastId}, function(data){
+	$.post('/include/async/load_comment_after_delete.php', {id:lastId, to_id:toId}, function(data){
 		// alert(data);
 		if(data != ''){
 			$('.comments tr:last').after(data);

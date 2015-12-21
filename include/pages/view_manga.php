@@ -9,6 +9,7 @@ if(isset($_GET['id'])){
 	} else {
 		$current_page = 1;
 	}
+	// V Second param means comments per page.
 	$manga = new manga($selected_manga, 3, $current_page);
 	$manga->count_votes($_GET['id']);
 	is_null($manga->vote_num) && $manga->vote_num = 0;
