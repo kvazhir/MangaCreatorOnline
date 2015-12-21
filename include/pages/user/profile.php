@@ -6,7 +6,7 @@ $mysql = mysql::get_instance();
 $sql = 'select count(*) as num from users where username = "'.$mysql->real_escape($user).'"';
 $mysql->query($sql);
 
-if($user == '' || $mysql->fetch()['num'] == 0){
+if ($mysql->fetch()['num'] == 0) {
 	echo '<div id="user_not_found">
 			<div>User not found...</div>
 		</div>';
