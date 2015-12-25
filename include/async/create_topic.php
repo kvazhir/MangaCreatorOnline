@@ -1,6 +1,6 @@
 <?php
 // echo 'asd';
-include "/../include_all.php";
+include "../include_all.php";
 // echo $_SESSION['id'];
 // if(!empty($_POST['text']) && !empty($_POST['title'])){
 	$sql = 'insert into forum_post(user, text, topic, categ) values ("'.$mysql->real_escape($_POST['user']).'","'.$mysql->real_escape($_POST['text']).'","'.$mysql->real_escape($_POST['title']).'","'.$mysql->real_escape($_POST['categ']).'")';

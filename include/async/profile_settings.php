@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "/../include_all.php";
+include "../include_all.php";
 $sql = 'update user_profile_style set irrelevant="1"';
 if($_POST['background'] != '')
 	$sql .= ',background="'.$mysql->real_escape($_POST['background']).'"';

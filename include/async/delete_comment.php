@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "/../include_all.php";
+include "../include_all.php";
 if(user::$logged_in){
 	if(user::$current->status == 'admin' || user::$current->status == 'moderator'){
 		$sql = 'delete from comments where id="'.$_POST['id'].'"';
