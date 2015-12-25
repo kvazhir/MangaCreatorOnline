@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '/../include_all.php';
+include '../include_all.php';
 $str = '';
 if($_POST['text'] != ''){
 	// $sql = 'select * from mangas where user regexp "(?:\w(?!'.$_POST['text'].'))*'.$_POST['text'].'\w*"';

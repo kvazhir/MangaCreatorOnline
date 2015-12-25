@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '/include/include_all.php';
+include 'include/include_all.php';
 
 $page = new page();
 //echo $page->current;

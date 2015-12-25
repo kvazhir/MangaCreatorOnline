@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '/../include_all.php';
+include '../include_all.php';
 // $mysql = mysql::get_instance();
 $sql = 'select * from mangas where user="'.user::$current->username.'" order by id desc limit 1';
 $mysql->query($sql);

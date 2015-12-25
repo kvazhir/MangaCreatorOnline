@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '/../include_all.php';
+include '../include_all.php';
 // $mysql = mysql::get_instance();
 if(isset($_POST['text'])){
 	// echo nl2br($_POST['text']);

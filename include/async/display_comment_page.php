@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '/../include_all.php';
+include '../include_all.php';
 // $mysql = mysql::get_instance();
 $str = '';
 $select_comments = 'select * from comments where type="'.$_POST['type'].'" and to_id="'.$_POST['id'].'" order by id limit '.$_POST['comments_per_page'].' offset '.intval(($_POST['page']-1)*$_POST['comments_per_page']);

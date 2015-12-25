@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '/../include_all.php';
+include '../include_all.php';
 $sql = 'select count(*) as exist from votes where to_id="'.$_POST['id'].'" and user="'.user::$current->username.'" and status="'.$_POST['status'].'" limit 1';
 // $sql = 'select exists(select * from votes where to_id="'.$_POST['id'].'" and user="'.user::$current->username.'" and status="'.$_POST['status'].'") from votes';
 /* for test

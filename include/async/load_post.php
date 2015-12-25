@@ -1,7 +1,7 @@
 <?php
 // echo 'mommy';
 session_start();
-include '/../include_all.php';
+include '../include_all.php';
 // echo isset($_SESSION['username']);
 $id = $_POST['id'];
 $sql = 'select * from forum_post where id="'.$id.'"';
