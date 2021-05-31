@@ -1,13 +1,13 @@
 <?php
 session_start();
-include 'include/include_all.php';
+
+require_once $_SERVER['DOCUMENT_ROOT'] . '/include/include_all.php';
 
 $page = new page();
 //echo $page->current;
 if (user::$logged_in){
 	// echo 'Welcome '.user::$current->username;
 };
-//echo 'asdasd';
 
 //var_dump($_POST);
 if (isset($_POST['username'])){

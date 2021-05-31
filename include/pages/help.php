@@ -15,8 +15,8 @@
     <li id="about_me">About Me</li>
     <li class="support">Support
     	<ul class="drop_how_to_menu">
-        	<li>Filling space ?(ﾉ)・´ω・(ヾ)</li>
-            <li>(?・・)σ... Passing by...</li>
+        	<li>Filling space ?</li>
+            <li>(?..)>... Passing by...</li>
         	<li id="submit_ticket">Submit a ticket</li>
             <li id="terms_of_service">Terms of Service</li>
             <li id="privacy">Privacy Policy</li>

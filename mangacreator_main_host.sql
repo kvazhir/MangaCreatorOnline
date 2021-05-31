@@ -17,10 +17,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `mangacreator_main`
+-- Database: `id3488809_mangacreator_main`
 --
-CREATE DATABASE IF NOT EXISTS `mangacreator_main` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `mangacreator_main`;
+CREATE DATABASE IF NOT EXISTS `id3488809_mangacreator_main` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `id3488809_mangacreator_main`;
 
 -- --------------------------------------------------------
 

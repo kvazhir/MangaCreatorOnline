@@ -19,7 +19,7 @@ if(isset($_GET['comment_page']) && $_GET['comment_page'] > 0){
 	$current_page = 1;
 }
 
-$profile = new profile($user, 3, $current_page);
+$profile = new profile($user, 5, $current_page);
 
 // echo $profile->comments_num_pages;
 

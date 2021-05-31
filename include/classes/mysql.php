@@ -3,7 +3,7 @@ class mysql{
 	private $connection;
 	private $query;
 	function __construct(){
-		$this->connection = mysqli_connect('localhost', 'toor', 'toor', 'mangacreator_main') or die(mysqli_error($this->connection));
+		$this->connection = mysqli_connect('localhost', 'rexu', 'Paulica1@.', 'mangacreator') or die(mysqli_error($this->connection));
 			if (!$this->connection){//$connect
 				echo mysqli_connect_errno().mysqli_connect_error();
 			}

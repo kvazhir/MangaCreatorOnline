@@ -1,4 +1,5 @@
 <?php
+error_reporting(-1);
 include $_SERVER['DOCUMENT_ROOT'].'/globals.php';
 include 'classes/mysql.php';
 $mysql = new mysql();
@@ -11,6 +12,7 @@ include 'classes/comment.php';
 include 'classes/manga.php';
 include 'classes/profile_class.php';
 include 'classes/system.php';
+
 if(isset($_GET['logout'])){
 	unset($_SESSION['username']);
 	unset($_SESSION['id']);

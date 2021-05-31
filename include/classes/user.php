@@ -119,40 +119,33 @@ class user{
 	}
 
 	function upload_avatar($files){
+		// var_dump($files);
 		$target_dir = $_SERVER['DOCUMENT_ROOT'].'/imagevault/uploaded/avatars/';
 		// echo $target_dir.'<br>'.$files["fileToUpload"]["tmp_name"].'<Br>';
-		// echo '<img src="'.$target_dir.'Ishimaru.jpg" />';
 		$target_file = $target_dir . basename($files["fileToUpload"]["name"]);
+		// echo $target_file . '<br>';
 		$uploadOk = 1;
-		$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
+		$imageFileType = pathinfo($target_file, PATHINFO_EXTENSION);
 		// Check if image file is a actual image or fake image
 		$size = getimagesize($files["fileToUpload"]["tmp_name"]);
 		// print_r($size);
 
 		// echo $ratio;
 		$ratio = $size[0] / $size[1];
-		$ratio_200 = $size[1]/200;
-		$height = ceil($size[1]/$ratio_200);
-		$width = ceil($size[0]/$ratio_200);
-		if($width > 300){
+		$ratio_200 = $size[1] / 200;
+		$height = ceil($size[1] / $ratio_200);
+		$width = ceil($size[0] / $ratio_200);
+		if ($width > 300){
 			$dif = $width - 300;
 			$width -= $dif;
 		}
-		// if($ratio > 1) {
-		// 	$height = ceil($size[1]/$ratio_200);
-		// 	$width = ceil($size[0]/$ratio_200);
-		// } else {
-		// 	$height = ceil($size[1]/$ratio_200);
-		// 	$width = ceil($size[0]/$ratio_200);
-		// }
-			// $width = 500;
-			// $height = 500/$ratio;
+
 		// echo $height.' '.$width;
 		$src = imagecreatefromstring(file_get_contents($files["fileToUpload"]["tmp_name"]));
-		$dst = imagecreatetruecolor($width,$height);
-		imagecopyresampled($dst,$src,0,0,0,0,$width,$height,$size[0],$size[1]);
+		$dst = imagecreatetruecolor($width, $height);
+		imagecopyresampled($dst, $src, 0, 0, 0, 0, $width, $height, $size[0], $size[1]);
 		imagedestroy($src);
-		imagepng($dst,$files["fileToUpload"]["tmp_name"]); // adjust format as needed
+		imagepng($dst, $files["fileToUpload"]["tmp_name"]); // adjust format as needed
 		imagedestroy($dst);
 		// $check !== false ? $uploadOk = 1 : $uploadOk = 0;
 		// Check if file already exists
@@ -177,8 +170,9 @@ class user{
 			echo "Sorry, your file was not uploaded.";
 		} else {
 			move_uploaded_file($files["fileToUpload"]["tmp_name"], $target_file);
+			echo $files['fileToUpload']['tmp_name'] . ' ' . $target_file;
 			// $this->convertImage($files["fileToUpload"]["tmp_name"], $target_file, 100);
-			rename($target_file, $target_dir.$_SESSION['id'].'.'.$imageFileType);
+			rename($target_file, $target_dir.$_SESSION['id']. '.' .$imageFileType);
 			return $_SESSION['id'].'.'.$imageFileType;
 		}
 	}

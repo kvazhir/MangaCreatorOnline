@@ -1,3 +1,3 @@
 <?php
-echo "Copyright © 2015 - Forgaci Paul-Mihai";
+echo "Placeholder text... Probably will add something later.";
 ?>
