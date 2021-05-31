@@ -39,11 +39,11 @@ class user{
 		}
 		if (strlen($pass)<8) {
 			$response->add('error', 'Password not long enough. o(╥﹏╥)o');
-		} elseif(strlen($pass)>16) {
+		} elseif(strlen($pass)>130) {
 			$response->add('error', 'Password too long... ι(｀ロ´)ノ');
 		}
 		if (preg_match('/[^\w]/',$user)){
-			$response->add('error', 'Password too qweqweg... ι(｀ロ´)ノ');
+			$response->add('error', 'Username contains non-alphanumeric characters... ι(｀ロ´)ノ');
 		}
 		if (strlen($user)<4) {
 			$response->add('error', '(oT-T)尸~~ Username not long enough.');

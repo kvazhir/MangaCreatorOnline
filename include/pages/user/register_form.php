@@ -28,7 +28,7 @@ exit(0);
 			<td><input name="username" type="text" placeholder="Username (4-16 char)" autocomplete="off"/></td>
 		</tr>
 		<tr>
-			<td><input name="password" type="password" placeholder="Password (8-64 char)" autocomplete="off"/></td>
+			<td><input name="password" type="password" placeholder="Password (8-130 char)" autocomplete="off"/></td>
 		</tr>
 		<tr>
 			<td><input name="email" type="text" placeholder="Email" autocomplete="off"/></td>
